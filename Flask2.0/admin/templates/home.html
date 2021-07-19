@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+	<h1>Home Page</h1>
+	<p>So this page is essentially useless, but ig this is my first project so bare with me<br>Yo M, thanks for checking it out man! means a lot and yeah this is my first ever website on the internet</p>
+	<p>----------------------------------------------------------------------------------------------------------</p>
+{% for x in content %}
+	{% if x == "Harini Sridhar" %}
+		<p>{{x}}: The Queen Potatoe</p>
+	{% else %}
+		<p>{{x}}</p>
+	{% endif %}
+{% endfor %}
+{% endblock %}
